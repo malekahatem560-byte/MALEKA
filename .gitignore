@@ -2,3 +2,4 @@ target/
 data/memory.json
 .DS_Store
 .env
+.env
