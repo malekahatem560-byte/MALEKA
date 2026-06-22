@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>MALEKA Ω REASONING FIELD V6</title>
+
+<style>
+body {
+  margin:0;
+  background:black;
+  overflow:hidden;
+  font-family: monospace;
+  color:#00ffcc;
+}
+#hud {
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+canvas { display:block; }
+</style>
+</head>
+
+<body>
+
+<div id="hud">
+  <div>MALEKA REASONING FIELD V6</div>
+  <div id="info"></div>
+</div>
+
+<canvas id="c"></canvas>
+
+<script>
+const c = document.getElementById("c");
+const ctx = c.getContext("2d");
+
+c.width = window.innerWidth;
+c.height = window.innerHeight;
+
+let state = { goals: [], reasoningEdges: [] };
+
+const ws = new WebSocket("ws://localhost:3000");
+
+ws.onmessage = (e) => {
+  try {
+    state = JSON.parse(e.data);
+    document.getElementById("info").innerText =
+      "goals: " + (state.goals?.length || 0) +
+      " | edges: " + (state.reasoningEdges?.length || 0);
+  } catch {}
+};
+
+function drawGoal(g, i) {
+  const cx = c.width/2;
+  const cy = c.height/2;
+
+  const angle = (i / (state.goals.length || 1)) * Math.PI * 2;
+  const radius = 120 + g.pressure * 260;
+
+  const x = cx + Math.cos(angle) * radius;
+  const y = cy + Math.sin(angle) * radius;
+
+  ctx.beginPath();
+  ctx.arc(x, y, 5 + g.vitality * 10, 0, Math.PI*2);
+  ctx.fillStyle = "yellow";
+  ctx.fill();
+
+  return { x, y, id: g.id };
+}
+
+function loop() {
+  requestAnimationFrame(loop);
+
+  ctx.fillStyle = "rgba(0,0,0,0.25)";
+  ctx.fillRect(0,0,c.width,c.height);
+
+  const goals = state.goals || [];
+  const edges = state.reasoningEdges || [];
+
+  const positions = goals.map(drawGoal);
+
+  // draw reasoning edges
+  edges.forEach(e => {
+    const from = positions.find(p => p.id === e.from);
+    const to = positions.find(p => p.id === e.to);
+
+    if (!from || !to) return;
+
+    ctx.beginPath();
+    ctx.moveTo(from.x, from.y);
+    ctx.lineTo(to.x, to.y);
+
+    const alpha = Math.min(1, e.weight);
+
+    ctx.strokeStyle = `rgba(0,255,255,${alpha})`;
+    ctx.stroke();
+  });
+
+  // core
+  const cx = c.width/2;
+  const cy = c.height/2;
+
+  ctx.beginPath();
+  ctx.arc(cx, cy, 18, 0, Math.PI*2);
+  ctx.fillStyle = "#00ffcc";
+  ctx.fill();
+
+  ctx.fillStyle = "#00ffcc";
+  ctx.fillText("reasoning core", cx + 25, cy);
+}
+
+loop();
+</script>
+
+</body>
+</html>

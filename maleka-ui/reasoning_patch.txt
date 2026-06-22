@@ -1,0 +1,79 @@
+MODIFY control_server.js:
+
+ADD:
+
+let goals = [
+  { id: "g1", pressure: Math.random(), vitality: 1.0, cause: "entropy" },
+  { id: "g2", pressure: Math.random(), vitality: 1.0, cause: "signal" },
+  { id: "g3", pressure: Math.random(), vitality: 1.0, cause: "self" }
+];
+
+let reasoningEdges = [];
+
+FUNCTION evolveReasoning():
+
+reasoningEdges = [];
+
+// causal relationships
+for (let i = 0; i < goals.length; i++) {
+  for (let j = 0; j < goals.length; j++) {
+    if (i !== j) {
+      const influence = Math.random();
+
+      if (influence > 0.6) {
+        reasoningEdges.push({
+          from: goals[i].id,
+          to: goals[j].id,
+          weight: influence
+        });
+      }
+    }
+  }
+}
+
+// goal interaction dynamics
+goals = goals.map(g => {
+  let influenceSum = 0;
+
+  reasoningEdges.forEach(e => {
+    if (e.to === g.id) influenceSum += e.weight;
+  });
+
+  g.pressure += (Math.random() - 0.5) * 0.1 + influenceSum * 0.02;
+  g.vitality -= 0.01;
+
+  // suppression condition (goal kills weaker goal)
+  if (g.pressure > 0.8) {
+    goals.forEach(other => {
+      if (other.id !== g.id && other.pressure < g.pressure) {
+        other.vitality -= 0.02;
+      }
+    });
+  }
+
+  return g;
+});
+
+// remove dead goals
+goals = goals.filter(g => g.vitality > 0);
+
+// meta-goal generation
+if (Math.random() > 0.75) {
+  goals.push({
+    id: "g" + Date.now(),
+    pressure: Math.random(),
+    vitality: 1.0,
+    cause: "meta-reasoning"
+  });
+}
+
+UPDATE broadcast:
+
+broadcast(JSON.stringify({
+  tick: Date.now(),
+  entropy: Math.random(),
+  signal: Math.random(),
+  stability: Math.random(),
+  goals,
+  reasoningEdges
+}));

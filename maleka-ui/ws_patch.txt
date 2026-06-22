@@ -1,0 +1,17 @@
+UPDATE control_server.js:
+
+Replace broadcast payload with:
+
+broadcast(JSON.stringify({
+  tick: Date.now(),
+  entropy: Math.random(),
+  signal: Math.random(),
+  stability: Math.random(),
+  goals: [
+    { id: "g1", pressure: Math.random() },
+    { id: "g2", pressure: Math.random() },
+    { id: "g3", pressure: Math.random() }
+  ],
+  memory: Math.random(),
+  decision_bias: Math.random() - 0.5
+}));

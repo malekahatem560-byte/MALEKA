@@ -1,0 +1,1157 @@
+{
+  "identity": {
+    "id": "MALEKA-Ω",
+    "continuity": 1,
+    "coherence": 1,
+    "drift": 0
+  },
+  "goals": [
+    {
+      "id": "mission_preserve_maleka",
+      "type": "mission",
+      "priority": 100,
+      "children": [
+        {
+          "id": "objective_maintain_identity",
+          "type": "objective",
+          "priority": 90,
+          "children": [
+            {
+              "id": "task_measure_coherence",
+              "type": "task",
+              "priority": 80,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "objective_expand_knowledge",
+          "type": "objective",
+          "priority": 70,
+          "children": [
+            {
+              "id": "task_record_runtime",
+              "type": "task",
+              "priority": 60,
+              "status": "pending"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "memory": {
+    "events": [
+      {
+        "tick": 1,
+        "timestamp": 1782172190142
+      },
+      {
+        "tick": 2,
+        "timestamp": 1782172191143
+      },
+      {
+        "tick": 3,
+        "timestamp": 1782172192144
+      },
+      {
+        "tick": 4,
+        "timestamp": 1782172193145
+      },
+      {
+        "tick": 5,
+        "timestamp": 1782172194147
+      },
+      {
+        "tick": 6,
+        "timestamp": 1782172195150
+      },
+      {
+        "tick": 7,
+        "timestamp": 1782172196151
+      },
+      {
+        "tick": 8,
+        "timestamp": 1782172197153
+      },
+      {
+        "tick": 9,
+        "timestamp": 1782172198155
+      },
+      {
+        "tick": 10,
+        "timestamp": 1782172199157
+      },
+      {
+        "tick": 11,
+        "timestamp": 1782172200158
+      },
+      {
+        "tick": 12,
+        "timestamp": 1782172201159
+      },
+      {
+        "tick": 13,
+        "timestamp": 1782172346407
+      },
+      {
+        "tick": 14,
+        "timestamp": 1782172347408
+      },
+      {
+        "tick": 15,
+        "timestamp": 1782172348409
+      },
+      {
+        "tick": 16,
+        "timestamp": 1782172349410
+      },
+      {
+        "tick": 17,
+        "timestamp": 1782172350411
+      },
+      {
+        "tick": 18,
+        "timestamp": 1782172351413
+      },
+      {
+        "tick": 19,
+        "timestamp": 1782172352415
+      },
+      {
+        "tick": 20,
+        "timestamp": 1782172353416
+      },
+      {
+        "tick": 21,
+        "timestamp": 1782172354418
+      },
+      {
+        "tick": 22,
+        "timestamp": 1782172355420
+      },
+      {
+        "tick": 23,
+        "timestamp": 1782172356421
+      },
+      {
+        "tick": 24,
+        "timestamp": 1782172357422
+      },
+      {
+        "tick": 25,
+        "timestamp": 1782172358423
+      },
+      {
+        "tick": 26,
+        "timestamp": 1782172359424
+      },
+      {
+        "tick": 27,
+        "timestamp": 1782172360426
+      },
+      {
+        "tick": 28,
+        "timestamp": 1782172361427
+      },
+      {
+        "tick": 29,
+        "timestamp": 1782172362428
+      },
+      {
+        "tick": 30,
+        "timestamp": 1782172363429
+      },
+      {
+        "tick": 31,
+        "timestamp": 1782172364430
+      },
+      {
+        "tick": 32,
+        "timestamp": 1782172365431
+      },
+      {
+        "tick": 33,
+        "timestamp": 1782172366433
+      },
+      {
+        "tick": 34,
+        "timestamp": 1782172367434
+      },
+      {
+        "tick": 35,
+        "timestamp": 1782172368435
+      },
+      {
+        "tick": 36,
+        "timestamp": 1782172369436
+      },
+      {
+        "tick": 37,
+        "timestamp": 1782172370436
+      },
+      {
+        "tick": 38,
+        "timestamp": 1782172371438
+      },
+      {
+        "tick": 39,
+        "timestamp": 1782172372439
+      },
+      {
+        "tick": 40,
+        "timestamp": 1782172373440
+      },
+      {
+        "tick": 41,
+        "timestamp": 1782172374441
+      },
+      {
+        "tick": 42,
+        "timestamp": 1782172375443
+      },
+      {
+        "tick": 43,
+        "timestamp": 1782172376445
+      },
+      {
+        "tick": 44,
+        "timestamp": 1782172377446
+      },
+      {
+        "tick": 45,
+        "timestamp": 1782172378447
+      },
+      {
+        "tick": 46,
+        "timestamp": 1782172379449
+      },
+      {
+        "tick": 47,
+        "timestamp": 1782172380450
+      },
+      {
+        "tick": 48,
+        "timestamp": 1782172381451
+      },
+      {
+        "tick": 49,
+        "timestamp": 1782172382452
+      },
+      {
+        "tick": 50,
+        "timestamp": 1782172383453
+      },
+      {
+        "tick": 51,
+        "timestamp": 1782172384454
+      },
+      {
+        "tick": 52,
+        "timestamp": 1782172385455
+      },
+      {
+        "tick": 53,
+        "timestamp": 1782172386456
+      },
+      {
+        "tick": 54,
+        "timestamp": 1782172387457
+      },
+      {
+        "tick": 55,
+        "timestamp": 1782172388458
+      },
+      {
+        "tick": 56,
+        "timestamp": 1782172389459
+      },
+      {
+        "tick": 57,
+        "timestamp": 1782172390461
+      },
+      {
+        "tick": 58,
+        "timestamp": 1782172391462
+      },
+      {
+        "tick": 59,
+        "timestamp": 1782172392463
+      },
+      {
+        "tick": 60,
+        "timestamp": 1782172393464
+      },
+      {
+        "tick": 61,
+        "timestamp": 1782172394465
+      },
+      {
+        "tick": 62,
+        "timestamp": 1782172395466
+      },
+      {
+        "tick": 63,
+        "timestamp": 1782172396467
+      },
+      {
+        "tick": 64,
+        "timestamp": 1782172397468
+      },
+      {
+        "tick": 65,
+        "timestamp": 1782172398470
+      }
+    ],
+    "concepts": [],
+    "plans": [
+      {
+        "id": "plan_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "analyze",
+        "priority": 90
+      },
+      {
+        "id": "execute_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "execute",
+        "priority": 80
+      },
+      {
+        "id": "verify_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "verify",
+        "priority": 70
+      },
+      {
+        "id": "plan_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "analyze",
+        "priority": 70
+      },
+      {
+        "id": "execute_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "execute",
+        "priority": 60
+      },
+      {
+        "id": "verify_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "verify",
+        "priority": 50
+      }
+    ]
+  },
+  "knowledge": {
+    "entities": [],
+    "relations": [],
+    "nodes": [
+      {
+        "id": "tick_1",
+        "type": "runtime_tick",
+        "tick": 1
+      },
+      {
+        "id": "action_plan_objective_maintain_identity",
+        "type": "action",
+        "action": "analyze"
+      },
+      {
+        "id": "tick_2",
+        "type": "runtime_tick",
+        "tick": 2
+      },
+      {
+        "id": "tick_3",
+        "type": "runtime_tick",
+        "tick": 3
+      },
+      {
+        "id": "tick_4",
+        "type": "runtime_tick",
+        "tick": 4
+      },
+      {
+        "id": "tick_5",
+        "type": "runtime_tick",
+        "tick": 5
+      },
+      {
+        "id": "tick_6",
+        "type": "runtime_tick",
+        "tick": 6
+      },
+      {
+        "id": "tick_7",
+        "type": "runtime_tick",
+        "tick": 7
+      },
+      {
+        "id": "tick_8",
+        "type": "runtime_tick",
+        "tick": 8
+      },
+      {
+        "id": "tick_9",
+        "type": "runtime_tick",
+        "tick": 9
+      },
+      {
+        "id": "tick_10",
+        "type": "runtime_tick",
+        "tick": 10
+      },
+      {
+        "id": "tick_11",
+        "type": "runtime_tick",
+        "tick": 11
+      },
+      {
+        "id": "tick_12",
+        "type": "runtime_tick",
+        "tick": 12
+      },
+      {
+        "id": "tick_13",
+        "type": "runtime_tick",
+        "tick": 13
+      },
+      {
+        "id": "tick_14",
+        "type": "runtime_tick",
+        "tick": 14
+      },
+      {
+        "id": "tick_15",
+        "type": "runtime_tick",
+        "tick": 15
+      },
+      {
+        "id": "tick_16",
+        "type": "runtime_tick",
+        "tick": 16
+      },
+      {
+        "id": "tick_17",
+        "type": "runtime_tick",
+        "tick": 17
+      },
+      {
+        "id": "tick_18",
+        "type": "runtime_tick",
+        "tick": 18
+      },
+      {
+        "id": "tick_19",
+        "type": "runtime_tick",
+        "tick": 19
+      },
+      {
+        "id": "tick_20",
+        "type": "runtime_tick",
+        "tick": 20
+      },
+      {
+        "id": "tick_21",
+        "type": "runtime_tick",
+        "tick": 21
+      },
+      {
+        "id": "tick_22",
+        "type": "runtime_tick",
+        "tick": 22
+      },
+      {
+        "id": "tick_23",
+        "type": "runtime_tick",
+        "tick": 23
+      },
+      {
+        "id": "tick_24",
+        "type": "runtime_tick",
+        "tick": 24
+      },
+      {
+        "id": "tick_25",
+        "type": "runtime_tick",
+        "tick": 25
+      },
+      {
+        "id": "tick_26",
+        "type": "runtime_tick",
+        "tick": 26
+      },
+      {
+        "id": "tick_27",
+        "type": "runtime_tick",
+        "tick": 27
+      },
+      {
+        "id": "tick_28",
+        "type": "runtime_tick",
+        "tick": 28
+      },
+      {
+        "id": "tick_29",
+        "type": "runtime_tick",
+        "tick": 29
+      },
+      {
+        "id": "tick_30",
+        "type": "runtime_tick",
+        "tick": 30
+      },
+      {
+        "id": "tick_31",
+        "type": "runtime_tick",
+        "tick": 31
+      },
+      {
+        "id": "tick_32",
+        "type": "runtime_tick",
+        "tick": 32
+      },
+      {
+        "id": "tick_33",
+        "type": "runtime_tick",
+        "tick": 33
+      },
+      {
+        "id": "tick_34",
+        "type": "runtime_tick",
+        "tick": 34
+      },
+      {
+        "id": "tick_35",
+        "type": "runtime_tick",
+        "tick": 35
+      },
+      {
+        "id": "tick_36",
+        "type": "runtime_tick",
+        "tick": 36
+      },
+      {
+        "id": "tick_37",
+        "type": "runtime_tick",
+        "tick": 37
+      },
+      {
+        "id": "tick_38",
+        "type": "runtime_tick",
+        "tick": 38
+      },
+      {
+        "id": "tick_39",
+        "type": "runtime_tick",
+        "tick": 39
+      },
+      {
+        "id": "tick_40",
+        "type": "runtime_tick",
+        "tick": 40
+      },
+      {
+        "id": "tick_41",
+        "type": "runtime_tick",
+        "tick": 41
+      },
+      {
+        "id": "tick_42",
+        "type": "runtime_tick",
+        "tick": 42
+      },
+      {
+        "id": "tick_43",
+        "type": "runtime_tick",
+        "tick": 43
+      },
+      {
+        "id": "tick_44",
+        "type": "runtime_tick",
+        "tick": 44
+      },
+      {
+        "id": "tick_45",
+        "type": "runtime_tick",
+        "tick": 45
+      },
+      {
+        "id": "tick_46",
+        "type": "runtime_tick",
+        "tick": 46
+      },
+      {
+        "id": "tick_47",
+        "type": "runtime_tick",
+        "tick": 47
+      },
+      {
+        "id": "tick_48",
+        "type": "runtime_tick",
+        "tick": 48
+      },
+      {
+        "id": "tick_49",
+        "type": "runtime_tick",
+        "tick": 49
+      },
+      {
+        "id": "tick_50",
+        "type": "runtime_tick",
+        "tick": 50
+      },
+      {
+        "id": "tick_51",
+        "type": "runtime_tick",
+        "tick": 51
+      },
+      {
+        "id": "tick_52",
+        "type": "runtime_tick",
+        "tick": 52
+      },
+      {
+        "id": "tick_53",
+        "type": "runtime_tick",
+        "tick": 53
+      },
+      {
+        "id": "tick_54",
+        "type": "runtime_tick",
+        "tick": 54
+      },
+      {
+        "id": "tick_55",
+        "type": "runtime_tick",
+        "tick": 55
+      },
+      {
+        "id": "tick_56",
+        "type": "runtime_tick",
+        "tick": 56
+      },
+      {
+        "id": "tick_57",
+        "type": "runtime_tick",
+        "tick": 57
+      },
+      {
+        "id": "tick_58",
+        "type": "runtime_tick",
+        "tick": 58
+      },
+      {
+        "id": "tick_59",
+        "type": "runtime_tick",
+        "tick": 59
+      },
+      {
+        "id": "tick_60",
+        "type": "runtime_tick",
+        "tick": 60
+      },
+      {
+        "id": "tick_61",
+        "type": "runtime_tick",
+        "tick": 61
+      },
+      {
+        "id": "tick_62",
+        "type": "runtime_tick",
+        "tick": 62
+      },
+      {
+        "id": "tick_63",
+        "type": "runtime_tick",
+        "tick": 63
+      },
+      {
+        "id": "tick_64",
+        "type": "runtime_tick",
+        "tick": 64
+      },
+      {
+        "id": "tick_65",
+        "type": "runtime_tick",
+        "tick": 65
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_plan_objective_maintain_identity",
+        "target": "objective_maintain_identity",
+        "relation": "supports"
+      },
+      {
+        "source": "action_plan_objective_maintain_identity",
+        "target": "tick_2",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_2",
+        "target": "tick_3",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_3",
+        "target": "tick_4",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_4",
+        "target": "tick_5",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_5",
+        "target": "tick_6",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_6",
+        "target": "tick_7",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_7",
+        "target": "tick_8",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_8",
+        "target": "tick_9",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_9",
+        "target": "tick_10",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_10",
+        "target": "tick_11",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_11",
+        "target": "tick_12",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_12",
+        "target": "tick_13",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_13",
+        "target": "tick_14",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_14",
+        "target": "tick_15",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_15",
+        "target": "tick_16",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_16",
+        "target": "tick_17",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_17",
+        "target": "tick_18",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_18",
+        "target": "tick_19",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_19",
+        "target": "tick_20",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_20",
+        "target": "tick_21",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_21",
+        "target": "tick_22",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_22",
+        "target": "tick_23",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_23",
+        "target": "tick_24",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_24",
+        "target": "tick_25",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_25",
+        "target": "tick_26",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_26",
+        "target": "tick_27",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_27",
+        "target": "tick_28",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_28",
+        "target": "tick_29",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_29",
+        "target": "tick_30",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_30",
+        "target": "tick_31",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_31",
+        "target": "tick_32",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_32",
+        "target": "tick_33",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_33",
+        "target": "tick_34",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_34",
+        "target": "tick_35",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_35",
+        "target": "tick_36",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_36",
+        "target": "tick_37",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_37",
+        "target": "tick_38",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_38",
+        "target": "tick_39",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_39",
+        "target": "tick_40",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_40",
+        "target": "tick_41",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_41",
+        "target": "tick_42",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_42",
+        "target": "tick_43",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_43",
+        "target": "tick_44",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_44",
+        "target": "tick_45",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_45",
+        "target": "tick_46",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_46",
+        "target": "tick_47",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_47",
+        "target": "tick_48",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_48",
+        "target": "tick_49",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_49",
+        "target": "tick_50",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_50",
+        "target": "tick_51",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_51",
+        "target": "tick_52",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_52",
+        "target": "tick_53",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_53",
+        "target": "tick_54",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_54",
+        "target": "tick_55",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_55",
+        "target": "tick_56",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_56",
+        "target": "tick_57",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_57",
+        "target": "tick_58",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_58",
+        "target": "tick_59",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_59",
+        "target": "tick_60",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_60",
+        "target": "tick_61",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_61",
+        "target": "tick_62",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_62",
+        "target": "tick_63",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_63",
+        "target": "tick_64",
+        "relation": "precedes"
+      },
+      {
+        "source": "tick_64",
+        "target": "tick_65",
+        "relation": "precedes"
+      }
+    ]
+  },
+  "capabilities": [
+    "memory_write",
+    "knowledge_update",
+    "goal_management",
+    "runtime_execution"
+  ],
+  "resources": {
+    "energy": 1,
+    "compute": 1
+  },
+  "constraints": [],
+  "runtime": {
+    "tick": 65,
+    "startedAt": 1782172189134,
+    "generatedTasks": [
+      {
+        "id": "plan_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "analyze",
+        "priority": 90
+      },
+      {
+        "id": "execute_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "execute",
+        "priority": 80
+      },
+      {
+        "id": "verify_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "verify",
+        "priority": 70
+      },
+      {
+        "id": "plan_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "analyze",
+        "priority": 70
+      },
+      {
+        "id": "execute_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "execute",
+        "priority": 60
+      },
+      {
+        "id": "verify_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "verify",
+        "priority": 50
+      }
+    ],
+    "capabilityGraph": [
+      {
+        "capability": "memory_write",
+        "enabled": true
+      },
+      {
+        "capability": "knowledge_update",
+        "enabled": true
+      },
+      {
+        "capability": "goal_management",
+        "enabled": true
+      },
+      {
+        "capability": "runtime_execution",
+        "enabled": true
+      }
+    ],
+    "lastDecision": "observe",
+    "taskGraph": [
+      {
+        "id": "mission_preserve_maleka",
+        "type": "mission",
+        "priority": 100
+      },
+      {
+        "id": "objective_maintain_identity",
+        "type": "objective",
+        "priority": 90
+      },
+      {
+        "id": "task_measure_coherence",
+        "type": "task",
+        "priority": 80
+      },
+      {
+        "id": "objective_expand_knowledge",
+        "type": "objective",
+        "priority": 70
+      },
+      {
+        "id": "task_record_runtime",
+        "type": "task",
+        "priority": 60
+      }
+    ],
+    "activeTask": "task_measure_coherence",
+    "executionQueue": [
+      {
+        "id": "plan_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "analyze",
+        "priority": 90
+      },
+      {
+        "id": "execute_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "execute",
+        "priority": 80
+      },
+      {
+        "id": "verify_objective_maintain_identity",
+        "objective": "objective_maintain_identity",
+        "action": "verify",
+        "priority": 70
+      },
+      {
+        "id": "plan_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "analyze",
+        "priority": 70
+      },
+      {
+        "id": "execute_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "execute",
+        "priority": 60
+      },
+      {
+        "id": "verify_objective_expand_knowledge",
+        "objective": "objective_expand_knowledge",
+        "action": "verify",
+        "priority": 50
+      }
+    ],
+    "lastAction": {
+      "id": "plan_objective_maintain_identity",
+      "action": "analyze",
+      "objective": "objective_maintain_identity",
+      "executedAt": 1782172398470
+    },
+    "reasoning": {
+      "supportRelations": 1,
+      "graphSize": 65
+    }
+  }
+}

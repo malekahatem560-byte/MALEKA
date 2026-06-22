@@ -1,0 +1,46 @@
+MODIFY control_server.js:
+
+ADD:
+
+let goals = [
+  { id: "g1", pressure: Math.random(), vitality: 1.0 },
+  { id: "g2", pressure: Math.random(), vitality: 1.0 },
+  { id: "g3", pressure: Math.random(), vitality: 1.0 }
+];
+
+FUNCTION evolveGoals():
+
+// decay + mutation
+goals = goals.map(g => {
+  const noise = (Math.random() - 0.5) * 0.1;
+
+  g.pressure += noise;
+  g.vitality -= 0.01;
+
+  // reinforcement rule (self-amplification)
+  if (g.pressure > 0.7) g.vitality += 0.02;
+
+  return g;
+});
+
+// remove dead goals
+goals = goals.filter(g => g.vitality > 0);
+
+// spawn new goals from entropy
+if (Math.random() > 0.7) {
+  goals.push({
+    id: "g" + Date.now(),
+    pressure: Math.random(),
+    vitality: 1.0
+  });
+}
+
+UPDATE broadcast payload:
+
+broadcast(JSON.stringify({
+  tick: Date.now(),
+  entropy: Math.random(),
+  signal: Math.random(),
+  stability: Math.random(),
+  goals
+}));

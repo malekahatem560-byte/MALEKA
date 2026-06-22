@@ -1,0 +1,43 @@
+MODIFY control_server.js:
+
+ADD:
+
+let history = [];
+let selfModel = {
+  avgEntropy: 0,
+  avgSignal: 0,
+  avgStability: 0,
+  drift: 0
+};
+
+UPDATE broadcast section:
+
+const frame = {
+  tick: Date.now(),
+  entropy: Math.random(),
+  signal: Math.random(),
+  stability: Math.random(),
+  goals: [
+    { id: "g1", pressure: Math.random() },
+    { id: "g2", pressure: Math.random() }
+  ],
+  decision_bias: Math.random() - 0.5
+};
+
+history.push(frame);
+if (history.length > 200) history.shift();
+
+// SELF MODEL COMPUTATION
+selfModel.avgEntropy = history.reduce((a,b)=>a+b.entropy,0)/history.length;
+selfModel.avgSignal = history.reduce((a,b)=>a+b.signal,0)/history.length;
+selfModel.avgStability = history.reduce((a,b)=>a+b.stability,0)/history.length;
+
+// drift = how unstable system identity is
+selfModel.drift =
+  Math.abs(selfModel.avgEntropy - selfModel.avgSignal);
+
+broadcast(JSON.stringify({
+  ...frame,
+  history,
+  selfModel
+}));

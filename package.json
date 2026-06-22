@@ -1,9 +1,8 @@
 {
-  "name": "maleka-omega",
-  "version": "0.1.0",
+  "name": "maleka-control-plane",
   "type": "module",
-  "main": "kernel.js",
-  "scripts": {
-    "start": "node kernel.js"
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
   }
 }

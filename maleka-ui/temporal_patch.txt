@@ -1,0 +1,27 @@
+MODIFY control_server.js:
+
+ADD at top:
+
+let history = [];
+
+MODIFY broadcast section to:
+
+const frame = {
+  tick: Date.now(),
+  entropy: Math.random(),
+  signal: Math.random(),
+  stability: Math.random(),
+  goals: [
+    { id: "g1", pressure: Math.random() },
+    { id: "g2", pressure: Math.random() }
+  ],
+  decision_bias: Math.random() - 0.5
+};
+
+history.push(frame);
+if (history.length > 200) history.shift();
+
+broadcast(JSON.stringify({
+  ...frame,
+  history: history
+}));
