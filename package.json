@@ -1,0 +1,9 @@
+{
+  "name": "maleka-omega",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "kernel.js",
+  "scripts": {
+    "start": "node kernel.js"
+  }
+}
